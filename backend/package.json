@@ -7,7 +7,7 @@
   "scripts": {
         "build": "cd ../frontend && npm install && npm run build && cd ../backend",
     "start": "npm run build && node src/server.js",
-        "dev": "nodemon src/server.js",
+        "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
