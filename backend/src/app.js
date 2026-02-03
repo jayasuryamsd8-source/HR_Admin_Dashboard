@@ -22,4 +22,16 @@ app.use(
 /* ================= ROUTES ================= */
 app.use("/api/candidates", candidateRoutes);
 
+
+/* ================= SERVE FRONTEND (BUILD) ================= */
+const __frontendPath = path.join(__dirname, "..", "..", "frontend", "dist");
+app.use(express.static(__frontendPath));
+
+/* ================= SPA FALLBACK ================= */
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__frontendPath, "index.html"));
+});
+
+
+
 export default app;
