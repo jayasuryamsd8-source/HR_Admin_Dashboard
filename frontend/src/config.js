@@ -1,1 +1,1 @@
-export const API_BASE_URL = "http://localhost:5000";
+VITE_API_URL=https://hr-admin-dashboard-3.onrender.com
