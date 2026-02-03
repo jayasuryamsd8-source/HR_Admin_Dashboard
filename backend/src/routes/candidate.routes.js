@@ -24,6 +24,7 @@ router.post("/", createCandidate);
 router.get("/", getCandidates);
 
 // Dashboard stats
+app.use("/api/candidates", candidateRoutes);
 router.get("/stats", stats);
 
 // Get single candidate (detail / profile view)
