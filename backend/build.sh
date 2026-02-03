@@ -3,7 +3,7 @@ set -e
 
 echo "Building frontend..."
 cd ../frontend
-npm install
+npm ci --legacy-peer-deps
 npm run build
 
 echo "Frontend build complete!"
