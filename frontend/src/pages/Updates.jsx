@@ -19,7 +19,7 @@ export default function Updates() {
   /* ================= LOAD CANDIDATES ================= */
 
   const loadCandidates = async () => {
-    const res = await api.get("/candidates");
+    const res = await api.get("/api/candidates");
     setCandidates(res.data.items || []);
     setLoading(false);
   };
